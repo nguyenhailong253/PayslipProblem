@@ -259,7 +259,6 @@ public class Payslip {
     /* Display greetings */
     public void displayGreetings() {
         System.out.println("Welcome to the payslip generator\n");
-        System.out.flush();
     }
 
     /* Display heading */
