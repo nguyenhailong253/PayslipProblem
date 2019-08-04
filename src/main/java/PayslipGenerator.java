@@ -1,6 +1,5 @@
 /// author: Long Nguyen (long.nguyen@myob.com)
 
-//import java.lang.management.CompilationMXBean;
 import java.util.Scanner;
 
 public class PayslipGenerator {
