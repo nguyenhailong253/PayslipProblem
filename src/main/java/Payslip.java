@@ -9,7 +9,7 @@ public class Payslip {
      */
     static final int NUM_MONTHS = 12;
     static final float HUNDRED = 100.0f;
-    static Scanner INPUT = new Scanner(System.in);
+    static final Scanner INPUT = new Scanner(System.in);
     static final String[] VALID_MONTHS = new String[] {
             "January", "February", "March", "April", "May", "June", "July",
             "August", "September", "October", "November", "December"};
@@ -103,6 +103,7 @@ public class Payslip {
             startPeriod = INPUT.nextLine();
             splittedDate = startPeriod.split("\\s+"); // regex for white space
         } while (!isDateStandard(splittedDate));
+
 
         // if date is valid, check if date number is in standard format i.e 02, 12
         if (splittedDate[0].length() < 2) {
@@ -258,16 +259,16 @@ public class Payslip {
 
     /* Display greetings */
     public void displayGreetings() {
-        System.out.println("Welcome to the payslip generator\n");
+        System.out.println("Welcome to the payslip generator");
     }
 
     /* Display heading */
     public void displayHeading() {
-        System.out.println("\nYour payslip has been generated:\n");
+        System.out.println("Your payslip has been generated:");
     }
 
     /* Display thank you */
     public void displayThanks() {
-        System.out.println("\nThank you for using MYOB!\n");
+        System.out.println("Thank you for using MYOB!");
     }
 }
